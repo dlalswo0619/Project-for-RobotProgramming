@@ -6,6 +6,7 @@
 3. path_planning알고리즘을 이용한 목표점 방문
 4. 시작점 복귀
 
+//Project Demo(real world)
 실행 순서
 [TURTLEBOT3_SBC]
 ssh pi@***.***.***.***
@@ -30,4 +31,9 @@ ros2 launch turtlebot3_navigation2 navigation2.launch.py map:=$HOME/map.yaml
 
 ros2 launch turtlebot3_group6 lift.launch.py
 // 물체인식 후 경로탐색 시작
+
+//중단 서비스 실행
+ros2 service call /pause_navigation std_srvs/srv/SetBool "{data: true}"
+//재개 서비스 실행
+ros2 service call /pause_navigation std_srvs/srv/SetBool "{data: false}"
 
