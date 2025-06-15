@@ -33,7 +33,7 @@ ros2 launch turtlebot3_group6 lift.launch.py
 // 물체인식 후 경로탐색 시작
 
 //중단 서비스 실행
-ros2 service call /pause_navigation std_srvs/srv/SetBool "{data: true}"
+ros2 service call /pause_navigation std_srvs/srv/SetBool "{data: true}"<br/>
 //재개 서비스 실행
-ros2 service call /pause_navigation std_srvs/srv/SetBool "{data: false}"
+ros2 service call /pause_navigation std_srvs/srv/SetBool "{data: false}"<br/>
 
