@@ -8,10 +8,10 @@
 
 //Project Demo(real world)
 실행 순서
-[TURTLEBOT3_SBC]
-ssh pi@***.***.***.***
-cd turtlebot_ws/
-ros2 run v4l2_camera v4l2_camera_node --ros-args -r __ns:=/camera
+[TURTLEBOT3_SBC]<br/>
+ssh pi@***.***.***.***<br/>
+cd turtlebot_ws/<br/>
+ros2 run v4l2_camera v4l2_camera_node --ros-args -r __ns:=/camera<br/>
 
 
 새로운 터미널을 연후
